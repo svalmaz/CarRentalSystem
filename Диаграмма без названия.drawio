@@ -1,9 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T06:08:28.261Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" version="22.1.4" etag="EE7050Kpq6EBgJkfudIq" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-30T10:10:50.498Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="G3HZtzkCkky-g0mnOhIL" version="22.1.5" type="github">
   <diagram name="Страница — 1" id="gX5QVnBPWUQICoui4-p0">
-    <mxGraphModel>
+    <mxGraphModel dx="10500" dy="157170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="151600" pageHeight="151600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ReFMFFMGkQqqKKeDj3so-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="ReFMFFMGkQqqKKeDj3so-1" target="ReFMFFMGkQqqKKeDj3so-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="195" />
+              <mxPoint x="380" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ReFMFFMGkQqqKKeDj3so-1" value="Authentication" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ReFMFFMGkQqqKKeDj3so-2" value="Log in&lt;br&gt;&lt;br&gt;sql request{&lt;br&gt;&lt;br&gt;&lt;br&gt;}&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontFamily=Architects Daughter;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="510" width="240" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalsystem.Controller.MainController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="904.0">
+               <left>
+                  <AnchorPane prefHeight="731.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="table" layoutX="14.0" layoutY="146.0" onMouseClicked="#getSelected" prefHeight="369.0" prefWidth="474.0">
+                           <columns>
+                              <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="name" prefWidth="203.19993591308594" text="name" />
+                              <TableColumn fx:id="price" prefWidth="107.20001220703125" text="price" />
+                              <TableColumn fx:id="image" minWidth="0.0" prefWidth="0.0" text="image" />
+                              <TableColumn fx:id="category" prefWidth="91.199951171875" text="category" />
+                              <TableColumn fx:id="seats" prefWidth="91.199951171875" text="seats" />
+                              <TableColumn fx:id="isAvailable" prefWidth="203.19993591308594" text="name" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="searchName" layoutX="14.0" layoutY="18.0" prefHeight="26.0" prefWidth="305.0" promptText="Name" />
+                        <TextField fx:id="searchPriceMin" layoutX="14.0" layoutY="102.0" prefHeight="26.0" prefWidth="135.0" promptText="Price min" />
+                        <Button fx:id="searchBtnCommand" layoutX="432.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchBtn1Command" text="Search" />
+                        <Button fx:id="update" layoutX="360.0" layoutY="103.0" mnemonicParsing="false" onAction="#updateCommand" text="Update" />
+                        <TextField fx:id="searchPriceMax" layoutX="176.0" layoutY="102.0" prefHeight="26.0" prefWidth="136.0" promptText="Price max" />
+                        <ComboBox fx:id="searchCategory" layoutX="14.0" layoutY="66.0" prefHeight="26.0" prefWidth="236.0" promptText="Car category" />
+                        <ComboBox fx:id="searchSeats" layoutX="270.0" layoutY="66.0" prefHeight="26.0" prefWidth="214.0" promptText="Number of seats" />
+                        <Button fx:id="myOrders" layoutX="360.0" layoutY="14.0" mnemonicParsing="false" onAction="#myOrdersBtnCommand" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: #38a16d;" text="My orders" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <right>
+                  <AnchorPane prefHeight="800.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="208.0" fitWidth="294.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="rentBtn" layoutX="111.0" layoutY="451.0" mnemonicParsing="false" onAction="#rentBtnCommand" prefHeight="54.0" prefWidth="181.0" style="-fx-background-color: #38a16d;" text="Rent Now" textFill="WHITE" />
+                        <Label layoutX="25.0" layoutY="287.0" text="Seats" />
+                        <Label fx:id="seatsAdd" layoutX="111.0" layoutY="287.0" text="0" />
+                        <Label layoutX="25.0" layoutY="320.0" text="Category" />
+                        <Label fx:id="categoryAdd" layoutX="110.0" layoutY="317.0" prefHeight="18.0" prefWidth="94.0" text="Label" />
+                        <Label layoutX="25.0" layoutY="351.0" text="Price" />
+                        <Label fx:id="priceAdd" layoutX="109.0" layoutY="350.0" prefHeight="18.0" prefWidth="85.0" text="Label" />
+                        <Label layoutX="27.0" layoutY="389.0" text="Start date" />
+                        <Label layoutX="28.0" layoutY="421.0" text="End date" />
+                        <DatePicker fx:id="startDateAdd" layoutX="115.0" layoutY="382.0" />
+                        <DatePicker fx:id="endDateAdd" layoutX="115.0" layoutY="417.0" />
+                        <Label layoutX="26.0" layoutY="255.0" text="Name" />
+                        <Label fx:id="nameAdd" layoutX="109.0" layoutY="254.0" prefHeight="18.0" prefWidth="85.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </right>
+               <top>
+                  <AnchorPane prefHeight="80.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="385.0" layoutY="20.0" text="Car Rental System" textFill="#38a16d">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalsystem.Controller.AdminController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="904.0">
+         <left>
+            <AnchorPane prefHeight="731.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="14.0" layoutY="146.0" onMouseClicked="#getSelected" prefHeight="369.0" prefWidth="474.0">
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="name" prefWidth="203.19993591308594" text="name" />
+                        <TableColumn fx:id="price" prefWidth="107.20001220703125" text="price" />
+                        <TableColumn fx:id="isAvailable" prefWidth="91.199951171875" text="isAvailable" />
+                        <TableColumn fx:id="image" minWidth="0.0" prefWidth="0.0" text="image" />
+                        <TableColumn fx:id="category" prefWidth="91.199951171875" text="category" />
+                        <TableColumn fx:id="seats" prefWidth="91.199951171875" text="seats" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="searchName" layoutX="14.0" layoutY="18.0" prefHeight="26.0" prefWidth="305.0" promptText="Name" />
+                  <TextField fx:id="searchPriceMin" layoutX="14.0" layoutY="102.0" prefHeight="26.0" prefWidth="135.0" promptText="Price min" />
+                  <Button fx:id="searchBtnCommand" layoutX="432.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchBtn1Command" text="Search" />
+                  <Button fx:id="update" layoutX="360.0" layoutY="103.0" mnemonicParsing="false" onAction="#updateCommand" text="Update" />
+                  <TextField fx:id="searchPriceMax" layoutX="176.0" layoutY="102.0" prefHeight="26.0" prefWidth="136.0" promptText="Price max" />
+                  <ComboBox fx:id="searchCategory" layoutX="14.0" layoutY="66.0" prefHeight="26.0" prefWidth="236.0" promptText="Car category" />
+                  <ComboBox fx:id="searchSeats" layoutX="270.0" layoutY="66.0" prefHeight="26.0" prefWidth="214.0" promptText="Number of seats" />
+                  <CheckBox fx:id="searchIsAvailable" layoutX="379.0" layoutY="23.0" mnemonicParsing="false" text="Is available" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="800.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="nameText" layoutX="71.0" layoutY="14.0" prefHeight="33.0" prefWidth="289.0" promptText="Name" />
+                  <TextField fx:id="priceText" layoutX="71.0" layoutY="76.0" prefHeight="34.0" prefWidth="290.0" promptText="Price" />
+                  <ImageView fx:id="imageView" fitHeight="208.0" fitWidth="294.0" layoutX="71.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="selectImageBtn" layoutX="73.0" layoutY="200.0" mnemonicParsing="false" onAction="#selectImageBtnCommand" prefHeight="41.0" prefWidth="290.0" style="-fx-background-color: #38a16d;" text="Choose Image" textFill="WHITE" />
+                  <Button fx:id="saveBtn" layoutX="58.0" layoutY="469.0" mnemonicParsing="false" onAction="#saveBtnCommand" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #38a16d;" text="Edit" textFill="WHITE" />
+                  <Button fx:id="addBtn" layoutX="175.0" layoutY="469.0" mnemonicParsing="false" onAction="#addBtnCommand" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #38a16d;" text="Add" textFill="WHITE" />
+                  <Button fx:id="addBtn1" layoutX="286.0" layoutY="469.0" mnemonicParsing="false" onAction="#deleteBtnCommand" prefHeight="44.0" prefWidth="82.0" style="-fx-background-color: #38a16d;" text="Delete" textFill="WHITE" />
+                  <ComboBox fx:id="categoryComboBox" layoutX="71.0" layoutY="122.0" prefHeight="26.0" prefWidth="292.0" promptText="Car category" />
+                  <ComboBox fx:id="seatsComboBox" layoutX="71.0" layoutY="159.0" prefHeight="26.0" prefWidth="293.0" promptText="Number of seats" />
+               </children>
+            </AnchorPane>
+         </right>
+         <top>
+            <AnchorPane prefHeight="80.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="385.0" layoutY="20.0" text="Car Rental System" textFill="#38a16d">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
